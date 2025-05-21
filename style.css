@@ -1,0 +1,137 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background: linear-gradient(to bottom right, #1e1e2f, #3e3e5e);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #ffd700;
+}
+
+.menu-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  height: 4px;
+  background: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 300px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  transition: left 0.3s ease;
+  z-index: 1;
+}
+
+#sidebar.open {
+  left: 0;
+}
+
+#sidebar h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+#sidebar label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+#sidebar input, #sidebar textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: none;
+  border-radius: 4px;
+}
+
+#sidebar button {
+  margin-top: 1rem;
+  padding: 0.7rem 1rem;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.intro {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: url('https://images.unsplash.com/photo-1604079628040-9439cd5d2c3e') no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 600px;
+}
+
+.glass-card h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 1rem;
+}
+
+.glass-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.glass-card button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: #ffd700;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.glass-card button:hover {
+  transform: scale(1.05);
+}
